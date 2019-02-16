@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.liupeiqing.spring</groupId>
+    <artifactId>myspring-framework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.compiler.version>1.8</project.compiler.version>
+    </properties>
+    <name>liupeiqing-spring</name>
+    <description>
+        spring
+    </description>
+    <url>https://github.com/peiqingliu/</url>
+    <developers>
+        <developer>
+            <name>liupeiqing</name>
+            <email>1226880979@qq.com</email>
+        </developer>
+    </developers>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+        <!--这个包是AOP联盟的API包，里面包含了针对面向切面的接口。-->
+        <!--通常Spring等其它具备动态织入功能的框架依赖此包。-->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!--AOP框架在编译阶段，就对目标类进行修改，得到的class文件已经是被修改过的。-->
+        <!--生成静态的AOP代理类（生成*.class文件已经被改掉了，需要使用特定的编译器）。以AspectJ为代表 —— 静态AOP框架。-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.6.11</version>
+        </dependency>
+        <!--以上为测试springbean的jiar-->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
